@@ -1,17 +1,24 @@
 * {
     font-family: 'Times New Roman', Times, serif;
-    color: black;
 }
 
 body {
-    background-color: rgb(186, 190, 194);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(110, 183, 255);
+    margin: 0;
 }
 
 header {
-    position: sticky;
+    display: flex;
+    position: fixed;
     top: 0;
-    background-color: teal;
-    z-index: 3;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    z-index: 2;
 }
 
 header h1 {
@@ -19,14 +26,14 @@ header h1 {
 }
 
 nav {
-   position: relative;
+   display: flex;
+   justify-content: flex-end;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     flex-direction: row;
-    justify-content: flex-end;
     margin: 20px;
     line-height: 50px;
 }
@@ -34,10 +41,37 @@ nav ul {
 nav li {
     margin-left: 60px;
     font-size: 30px;
-    background-color: darkturquoise;
+    color: rgb(110, 183, 255);
     padding: 5px;
 }
 
+.function {
+    display: fixed;
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+}
+section {
+    display: flex;
+    align-content: flex-start;
+    font-size: 40px;
+    margin-bottom: 200px;
+}
+
+h2 {
+        display: block;
+        position: absolute;
+        
+        
+}
+
+p {
+    display: inline-block;
+    position: absolute;
+    border-left: 5px solid black;
+    font-size: 20px;
+}
 
 
 
