@@ -78,6 +78,7 @@ main {
     min-height: 100%;
     outline: 2px solid darkslategrey;
     transition: all 0.5s ease-in-out;
+    position: relative;
 }
 
 .refactor {
@@ -86,9 +87,10 @@ main {
     background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
     background-repeat: no-repeat;
     background-position: left;
-    transition: background-size 0.2s ease-in-out;
+    background-size: 800px;
+    transition: background-size 0.2s;
     transition-timing-function: all 0.5s ease-in-out;
-    display: flex;
+    display: block;
     text-decoration: none;
     cursor: grab;
     overflow: hidden;
@@ -98,6 +100,16 @@ main {
     min-width: 600px;
     min-height: 300px;
 }
+.imgtxt {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    text-align: left;
+    font-size: 38px;
+    width: 100%;
+    color: #fff;
+  }
+  
 
 .port {
     position: relative;
@@ -105,6 +117,7 @@ main {
     background-image: url(https://iphoneswallpapers.com/wp-content/uploads/2020/08/Coding-Life.jpg);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 400px;
     transition: background-size 0.2s;
     transition-timing-function: all 0.5s ease-in-out;
     display: flex;
@@ -113,7 +126,7 @@ main {
     overflow: hidden;
     text-indent: 100%;
     white-space:nowrap;
-    margin-top: 20px ;
+    margin-top: 25px ;
     min-width: 200px;
     min-height: 125px;
 }
@@ -140,38 +153,6 @@ figure {
     transition: flex-basis 500ms linear;
 }
  */
-/* figure .refactor {
-    position: relative;
-    text-align: center;
-    background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-    background-size: 700px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 4px solid darkslategrey;
-    background-clip: border-box;
-    transition: background-size 0.2s;
-    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
-    display: flex;
-    width: 700px;
-    height: 250px;
-    text-decoration: none;
-    cursor: grab;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space:nowrap;
-    margin-top: 25px ;
-}
-
-.code {
-    position: absolute;
-    top: 155%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    border: 7px solid white;
-    background-color: white;
-    color: rgb(110, 183, 255);
-}
-
 figure .port {
     position: relative;
     text-align: center;
@@ -202,12 +183,13 @@ figure .port {
     border: 7px solid white;
     background-color: white;
     color: rgb(110, 183, 255);
-} */
+}
 
 @media screen and (min-width: 992px) {
     main {
       width: 100%;
     }
+
   
     main {
       flex: 0 0 33.333%;
