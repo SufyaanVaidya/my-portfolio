@@ -59,14 +59,66 @@ nav li {
 
 }
 
-section .sec1 {
-    overflow: hidden;
-    padding: 20px;
-    margin-bottom: 40px;
-    margin-left: 0px;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-h2 {
+.sec1 {
+    flex: 1 0 100%;
+    transition: flex-basis 500ms linear;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    outline: 2px solid darkslategrey;
+    transition: all 0.5s ease-in-out;
+}
+
+.refactor {
+    position: relative;
+    text-align: center;
+    background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.2s ease-in-out;
+    transition-timing-function: all 0.5s ease-in-out;
+    display: flex;
+    text-decoration: none;
+    cursor: grab;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    margin-top: 25px ;
+    min-width: 600px;
+    min-height: 300px;
+}
+
+.port {
+    position: relative;
+    text-align: center;
+    background-image: url(https://iphoneswallpapers.com/wp-content/uploads/2020/08/Coding-Life.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 0.2s;
+    transition-timing-function: all 0.5s ease-in-out;
+    display: flex;
+    text-decoration: none;
+    cursor: grab;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    margin-top: 20px ;
+    min-width: 200px;
+    min-height: 125px;
+}
+
+/* h2 {
     display:inline;
     text-align: center;
     padding: 12px;
@@ -74,31 +126,25 @@ h2 {
     font-size: 40px;
     line-height: 200px;
     border-bottom: 5px solid darkslategrey;
-    background-color: darkslategrey;
+    background-color: darkslategrey; 
+} */
 
-   
-}
-
-h2 .page1 {
-    font-size: 50px;
-    font-weight: bold;
-    padding:30px 30px 30px 0px;
-    margin:auto;
-    text-align:center;
-}
-
-h2 p {
+/* h2 p {
     margin: 0 auto;
     display:inline-block;
     flex-wrap: wrap;
     
 }
-
-figure .refactor {
+figure {
+    flex: 1 0 100%;
+    transition: flex-basis 500ms linear;
+}
+ */
+/* figure .refactor {
     position: relative;
     text-align: center;
     background-image: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg);
-    background-size: 800px;
+    background-size: 700px;
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid darkslategrey;
@@ -106,7 +152,7 @@ figure .refactor {
     transition: background-size 0.2s;
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
     display: flex;
-    width: 800px;
+    width: 700px;
     height: 250px;
     text-decoration: none;
     cursor: grab;
@@ -130,7 +176,7 @@ figure .port {
     position: relative;
     text-align: center;
     background-image: url(https://iphoneswallpapers.com/wp-content/uploads/2020/08/Coding-Life.jpg);
-    background-size: 400px;
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
     border: 4px solid darkslategrey;
@@ -138,7 +184,7 @@ figure .port {
     transition: background-size 0.2s;
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
     display: flex;
-    width: 400px;
+    width: 300px;
     height: 250px;
     text-decoration: none;
     cursor: grab;
@@ -156,4 +202,28 @@ figure .port {
     border: 7px solid white;
     background-color: white;
     color: rgb(110, 183, 255);
-}
+} */
+
+@media screen and (min-width: 992px) {
+    main {
+      width: 100%;
+    }
+  
+    main {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    main {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    main:last-child {
+      flex-grow: 1;
+    }
+  }
+
+  
