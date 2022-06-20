@@ -2,30 +2,34 @@
 
 ## Description 
 
-This page is a portfolio about me, Sufyaan Vaidya. It 
+This page is a portfolio about me, Sufyaan Vaidya. It contains a small biography,
+a section that links to each project i've worked on, and lastly all the ways one could contact me if needed. At the top there are links that will direct you throughout the page.
 
 
-[Deployable-Link] (https://sufyaanvaidya.github.io/my-portfolio/)
+[Deployable-Link](https://sufyaanvaidya.github.io/my-portfolio/)
 
 ## Installation
 
 1. i created a repository to store and update the files in github.
 2. After the repo was created i created the base files and pushed them to the repo.
-3. When the starter files were added i begain to remove non-semantic elements and replace them with semantic elements.
-4. After adding the semantic elements i gave all images an alt tags describing them, and corrected any missing links and id's.
-5. When all the alt tags were added i when through the html file and put the headings in sequential order.
-6. Once the headings were in order all the html had left was a new and fitting title in which i added.
-7. After completing the html file i began editing the css file elements to match the semantic elements on the html.
-8. Once all the elements matched i began to comment on the css file above each line of code i modified.
-9. Finally, i added an MIT license to my repository.
+3. When the base files were added i begain to code mt html and css docs.
+4. To start i made sure the page had a viewport and the html structure.
+5. Once the structure was made i added titles, links, headers, and p tags to create its base.
+6. When the base was there i gave each element that needed to be targeted a class or an id.
+7. On css with the tags and their classes/id's i began to target and style each tag.
+8. After the tags were styled i made everything line up in the correct order i wanted.
+9. When in order i made the nav links travel through the page.
+10. Once the pages were finished i added a self picture and moved it to line up with the center.
 
 ## Usage 
 
-- Clicking "Search Engine Optimization" will direct you lower in the page to the Search Engine Optimization summary.
+- Clicking "bio" will direct you lower in the page to my biography section.
 
-- Clicking "Online Reputation Management" will direct you further down on the page to the Online Reputation Management summary.
+- Clicking "projects" will direct you further down on the page to the list of projects i have worked on.
 
-- Clicking "Social Media Marketing" will direct you to the bottom of the page to the Social Media Marketing summary
+- Clicking "contact info" will direct you to the bottom of the page to the different form of contacting me.
+
+![](./assets/images/Sufyaan's%20portfolio.gif)
 
 
 
