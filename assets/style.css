@@ -13,9 +13,9 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: var(--black);
     margin: 0;
-    color: var(--black);
+    color: var(--blue);
 }
 
 header {
@@ -24,10 +24,10 @@ header {
     top: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: darkslategray;
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--blue);
     width: 100%;
-    z-index: 2;
+
 }
 
 header h1 {
@@ -81,6 +81,7 @@ nav li {
     min-height: 200px;
     max-width: 200px;
     max-height: 200px;
+    z-index: 1;
 }
 
 main {
@@ -95,15 +96,24 @@ main {
     transition: flex-basis 500ms linear;
 }
 
-.boxes {
+.biography {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: right;
     min-height: 100%;
+    width: 300px;
     outline: 2px solid var(--grey);
     transition: all 0.5s ease-in-out;
-    position: relative;
+    text-align: center;
+   
 }
+.bodyy {
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+}
+
+
 
 .refactor {
     position: relative;
