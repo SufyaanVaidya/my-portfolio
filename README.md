@@ -29,7 +29,6 @@ a section that links to each project i've worked on, and lastly all the ways one
 
 - Clicking "contact info" will direct you to the bottom of the page to the different form of contacting me.
 
-![](./assets/images/Sufyaan's%20portfolio.gif)
 
 
 
